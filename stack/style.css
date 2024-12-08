@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    align-items: center;
+    height: 100vh;
+    background-color: #121826;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#stack-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column-reverse; /* Stack elements from bottom to top */
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    min-height: 50px; /* Ensure space for the stack */
+    width: 100px;
+}
+
+.node {
+    width: 80px; /* Reduced width */
+    height: 40px; /* Reduced height */
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    margin: 5px;
+    font-weight: bold;
+    position: relative;
+    font-size: 14px; /* Adjusted font size */
+}
+
+.arrow {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 18px; /* Adjusted arrow size */
+    color: #333;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#status {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    position: relative;
+}

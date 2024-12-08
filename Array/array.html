@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Visualization</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Array Operations Visualization</h1>
+    <div class="controls">
+      <input type="number" id="array-size" placeholder="Enter array size">
+      <button onclick="initializeArray()">Set Array Size</button>
+    </div>
+    <div class="controls">
+      <input type="number" id="input-value" placeholder="Enter a value">
+      <button onclick="insertElement()">Insert</button>
+      <button onclick="deleteElement()">Delete</button>
+      <button onclick="searchElement()">Search</button>
+    </div>
+    <div class="output" id="output"></div>
+    <div class="array-container" id="array-container"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

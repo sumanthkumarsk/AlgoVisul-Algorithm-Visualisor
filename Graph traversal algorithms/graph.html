@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graph traversal Algorithms</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="sticky-header">
+    <div class="logo-container">
+        <img src="https://i.pinimg.com/736x/33/0e/b6/330eb669b8feb7dc9efe24e7f0b8d098.jpg" alt="AlgoVisual Logo" class="logo">
+        <h1>AlgoVisual</h1>
+    </div>
+</header>
+  <div class="container">
+    <div class="controls">
+      <label for="algo">Algorithm:</label>
+      <select id="algo">
+        <option value="bfs">BFS (Breadth-First Search)</option>
+        <option value="dfs">DFS (Depth-First Search)</option>
+      </select>
+      <button id="add-node">Add Node</button>
+      <button id="add-edge">Add Edge</button>
+      <button id="start">Start Algorithm</button>
+      <label for="speed">Speed [ms]:</label> 
+      <input type="range" id="speed" min="10" max="1000" value="300">
+
+      <button id="reset">Reset</button>
+    </div>
+    <canvas id="graph-canvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlgoVisual</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="sticky-header">
+    <div class="logo-container">
+      <img src="https://i.pinimg.com/736x/33/0e/b6/330eb669b8feb7dc9efe24e7f0b8d098.jpg" alt="AlgoVisual Logo" class="logo">
+      <h1>AlgoVisual</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#home" title="Go to Home">Home</a></li>
+        <li><a href="#algorithms" title="Explore Algorithms">Algorithms</a></li>
+        <li><a href="#about" title="Learn More About Us">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Explore the Magic of Algorithms</h2>
+      <p>Visualize sorting, graph algorithms, and data structures interactively.</p>
+      <button class="cta-button" id="get-started">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Algorithms Section -->
+  <section id="algorithms" class="algorithms-section">
+    <h2>What You Can Learn</h2>
+    <div class="algorithm-grid">
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/47/9c/07/479c07563d75ab7a0280b0643324e824.jpg" alt="Sorting Algorithms" height="150" width="200"><br>
+        <button id="sorting-btn" class="cta-button">Sorting</button>
+        <p>Learn Merge, Quick, and Bubble Sort with step-by-step animations.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/3a/6c/63/3a6c6348aef98c3833e3fc105828a8bd.jpg" alt="Graph traversal Algorithms"  height="150" width="200">
+        <button id="traversing-btn" class="cta-button">Traversing</button>
+        <p>Explore DFS and BFS.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/3a/6c/63/3a6c6348aef98c3833e3fc105828a8bd.jpg" alt="MST Algorithms"  height="150" width="200">
+        <button id="Spanning-btn" class="cta-button">Spanning Tree</button>
+        <p>Explore minimum spanning tree algorithms like prim's, kruskal's.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/6a/8b/42/6a8b420f1b42b6759aa8349cc118b91e.jpg" alt="Array Operations"  height="150" width="200" >
+        <button id="array-btn" class="cta-button">Array</button>
+        <p>Visualize array manipulations interactively.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/93/59/4f/93594f7a6f2e6d757209d104440bc3b3.jpg" alt="Stack Operations"  height="150" width="200">
+        <button id="stack-btn" class="cta-button">Stack</button>
+        <p>Understand push, pop, and other stack operations visually.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230814111624/N-Queen-Problem.png" alt="N-Queens Problem"  height="150" width="200">
+        <button id="nqueens-btn" class="cta-button">N-Queen-Problem</button>
+        <p>Solve the N-Queens problem dynamically.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <section id="feedback" class="feedback-section">
+    <h2>Share Your Thoughts</h2>
+    <textarea id="feedback-input" placeholder="Write your feedback..."></textarea>
+    <button id="submit-feedback">Submit</button>
+    <div id="feedback-display">
+      <h3>Recent Feedback</h3>
+      <ul id="feedback-list"></ul>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About AlgoVisual</h2>
+    <p>
+      AlgoVisual is built to simplify learning and understanding of algorithms for students, developers, and enthusiasts.
+    </p>
+    <p>
+      Contact us at: <a href="sumanthkumar.cc.ee.beis@acharya.ac.in">contact@algovisual.com</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 AlgoVisual. Crafted with care for learners.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

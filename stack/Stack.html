@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Operation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="logo-container">
+            <img src="https://i.pinimg.com/736x/33/0e/b6/330eb669b8feb7dc9efe24e7f0b8d098.jpg" alt="AlgoVisual Logo" class="logo">
+            <h1>AlgoVisual</h1>
+        </div>
+    </header>
+    <h2>Stack Operation</h2>
+    
+    <div class="controls">
+        <label for="stack-size">Enter Stack Size: </label>
+        <input type="number" id="stack-size" placeholder="Enter size" min="1" />
+        <button onclick="setStackSize()">Set Size</button>
+    </div>
+
+    <!-- Controls for Push and Pop below the set size input -->
+    <div class="controls">
+        <input type="number" id="input-value" placeholder="Enter value" />
+        <button onclick="push()">Push</button>
+        <button onclick="pop()">Pop</button>
+    </div>
+
+    <div id="stack-container">
+        <div class="stack" id="stack">
+            <!-- Linked list stack will be visualized here -->
+        </div>
+    </div>
+
+    <p id="status"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

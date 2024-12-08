@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="logo-container">
+            <img src="https://i.pinimg.com/736x/33/0e/b6/330eb669b8feb7dc9efe24e7f0b8d098.jpg" alt="AlgoVisual Logo" class="logo">
+            <h1>AlgoVisual</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="controls">
+            
+            <label for="algorithm">Algorithm:</label>
+            <select id="algorithm">
+                <option value="bubble">Bubble Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="quick">Quick Sort</option>
+            </select>
+
+            <label for="speed">Speed [ms]:</label>
+            <input type="range" id="speed" min="10" max="1000" value="300">
+
+            <label for="size">Data Size:</label>
+            <input type="range" id="size" min="5" max="50" value="20">
+
+            <button id="generate">Generate</button>
+            <button id="start">Start</button>
+        </div>
+
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
